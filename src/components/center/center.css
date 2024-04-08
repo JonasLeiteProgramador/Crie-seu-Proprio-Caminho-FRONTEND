@@ -1,0 +1,80 @@
+.main {
+  background-image: url('../../assets/images/fundo.jpeg');
+  background-size: cover;
+  color: #fff;
+  padding: 5vw; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; 
+}
+
+.content {
+  text-align: center;
+  background-color: rgba(46, 204, 113, 0.8);
+  padding: 4vw; 
+  max-width: 90%; 
+  border-radius: 3%;
+}
+
+.content h1 {
+  font-size: 2.5vw; 
+  margin-bottom: 2vw; 
+  transition: ease-out 1s;
+  animation: fadeInDown 1s ease;
+}
+
+.content h1:hover {
+  color: #f4d03f;
+  transform: scale(1.1);
+}
+
+.content p {
+  font-size: 1.2vw; 
+  animation: fadeInUp 1s ease;
+  transition: ease-out 1s;
+}
+
+.content p:hover {
+  color: #f4d03f;
+  transform: scale(1.1);
+}
+
+.home {
+  padding: 1vw; 
+  transition: ease-out 1s;
+  width: 50%;
+  max-width: 90%; 
+  font-size: 1.5vw; 
+  color: #ecf0f1;
+  background-color: blue;
+}
+
+.home:hover {
+  transform: scale(1.1);
+  color:#f4d03f
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
